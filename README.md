@@ -41,8 +41,9 @@ This tool includes a sleek GUI built with `ttkbootstrap`, designed to run seamle
 
 ---
 
-## 🖼️ GUI Screenshot *(optional)*
-
+<img src = "a.png">
+<img src = "b.png">
+<img src = "c.png">
 ```bash
 # Add this only if you upload screenshot images in a "screenshots/" folder
 ![App Screenshot](screenshots/gui_light_mode.png)
