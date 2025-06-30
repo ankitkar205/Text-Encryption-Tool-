@@ -23,65 +23,90 @@ This tool includes a sleek GUI built with `ttkbootstrap`, designed to run seamle
 
 ## 🔒 Algorithms Used
 
-| Algorithm | Type         | Key Required? | Key Size         |
-|-----------|--------------|---------------|------------------|
-| AES       | Symmetric    | ✅ Yes         | 16 characters     |
-| DES       | Symmetric    | ✅ Yes         | 8 characters      |
-| RSA       | Asymmetric   | ❌ No (Auto)   | Public/Private Key Pair |
+| Algorithm | Type         | Key Required? | Key Size             |
+|-----------|--------------|----------------|----------------------|
+| AES       | Symmetric    | ✅ Yes          | 16 characters        |
+| DES       | Symmetric    | ✅ Yes          | 8 characters         |
+| RSA       | Asymmetric   | ❌ No (Auto)    | Public/Private Pair  |
 
 ---
 
 ## 🚀 How It Works
 
-1. Enter **plain text** into the input field.
-2. Select an **encryption algorithm**.
-3. Enter the **key** (if required).
-4. Choose between **Encrypt** or **Decrypt**.
-5. Get the result instantly and **copy** it if needed.
+1. Enter plain text into the input field.
+2. Select an encryption algorithm.
+3. Enter the encryption key if required (AES/DES).
+4. Click **Encrypt** or **Decrypt**.
+5. Copy the result with one click.
 
 ---
 
 ## 🖼️ GUI Screenshots
 
-<img src="a.png" width="100%" >
-<img src="b.png" width="100%" >
-<img src="c.png" width="100%" >
+> *(Make sure you’ve uploaded `a.png`, `b.png`, and `c.png` to your repo)*
+
+<img src="a.png" width="100%" alt="Light mode UI preview">
+<img src="b.png" width="100%" alt="Dark mode UI preview">
+<img src="c.png" width="100%" alt="Encryption Result view">
 
 ---
 
 ## ⚙️ Installation
 
-
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/text-encryption-tool.git
-cd text-encryption-tool
-
-```bash
+git clone https://github.com/ankitkar205/Text-Encryption-Tool-.git
+cd Text-Encryption-Tool-
+2️⃣ Create & Activate a Virtual Environment
+bash
+Copy
+Edit
 python -m venv .venv
-.venv\Scripts\activate        # On Windows
-source .venv/bin/activate    # On Linux/Mac
 
+# On Windows
+.venv\Scripts\activate
+
+# On Linux/Mac
+source .venv/bin/activate
+3️⃣ Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
+4️⃣ Run the App
+bash
+Copy
+Edit
 python gui.py
-
+📦 Build Executable (.exe)
+💡 Install PyInstaller
+bash
+Copy
+Edit
 pip install pyinstaller
+🔨 Build the .exe
+bash
+Copy
+Edit
+pyinstaller gui.py --onefile --noconsole --icon=icon.ico
+Final .exe will appear in the dist/ folder.
 
+You can skip the --icon=icon.ico part if you don’t use a custom icon.
 
 📁 Project Structure
 bash
 Copy
 Edit
-text-encryption-tool/
-├── aes_module.py        # AES encryption/decryption logic
-├── des_module.py        # DES encryption/decryption logic
-├── rsa_module.py        # RSA encryption/decryption logic
-├── gui.py               # Main GUI script
+Text-Encryption-Tool-/
+├── gui.py               # Main GUI app
+├── aes_module.py        # AES logic
+├── des_module.py        # DES logic
+├── rsa_module.py        # RSA logic
 ├── main.py              # Optional CLI version
 ├── icon.ico             # Optional app icon
 ├── README.md            # This file
-├── requirements.txt     # Python dependencies
-└── dist/                # Output folder for .exe
-
+├── requirements.txt     # Required libraries
+└── dist/                # Executable output folder
 ✅ Requirements
 Python 3.13.5 or higher
 
@@ -92,14 +117,11 @@ Edit
 ttkbootstrap
 pycryptodome
 rsa
-
 📃 License
-MIT License © 2025 [Rik]
+MIT License © 2025 [Ankit]
 
 🤝 Credits
 Developed by Ankit
 Cyber Security Internship – Pinnacle Labs
-Made with Python, caffeine ☕, and a love for clean code 💻❤️
-
-
+Made with ❤️ using Python, coffee ☕, and clean code.
 
