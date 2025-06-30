@@ -33,90 +33,73 @@ This tool includes a sleek GUI built with `ttkbootstrap`, designed to run seamle
 
 ## 🚀 How It Works
 
-1. User enters **plain text**.
-2. Selects the encryption algorithm.
-3. Enters the **key** (if required).
-4. Clicks **Encrypt** or **Decrypt**.
-5. Result is shown instantly and can be copied to clipboard.
+1. Enter **plain text** into the input field.
+2. Select an **encryption algorithm**.
+3. Enter the **key** (if required).
+4. Choose between **Encrypt** or **Decrypt**.
+5. Get the result instantly and **copy** it if needed.
 
 ---
 
-<img src = "a.png">
-<img src = "b.png">
-<img src = "c.png">
+## 🖼️ GUI Screenshots
+
+<img src="a.png" width="100%" >
+<img src="b.png" width="100%" >
+<img src="c.png" width="100%" >
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
 ```bash
-# Add this only if you upload screenshot images in a "screenshots/" folder
-![App Screenshot](screenshots/gui_light_mode.png)
-⚙️ Installation
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
 git clone https://github.com/your-username/text-encryption-tool.git
 cd text-encryption-tool
-2️⃣ Create & Activate a Virtual Environment (Recommended)
-bash
-Copy
-Edit
-python -m venv .venv
-.venv\Scripts\activate  # On Windows
-source .venv/bin/activate  # On Linux/Mac
-3️⃣ Install Required Modules
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4️⃣ Run the Application
-bash
-Copy
-Edit
-python gui.py
-📦 Build to Executable (.exe)
-💡 Install PyInstaller
-bash
-Copy
-Edit
-pip install pyinstaller
-🔨 Build .exe (Windows)
-bash
-Copy
-Edit
-pyinstaller gui.py --onefile --noconsole --icon=icon.ico
-Final .exe will be in the dist/ folder.
 
-💡 Remove --icon=icon.ico if you don’t want to use a custom icon.
+```bash
+python -m venv .venv
+.venv\Scripts\activate        # On Windows
+source .venv/bin/activate    # On Linux/Mac
+
+pip install -r requirements.txt
+python gui.py
+
+pip install pyinstaller
+
 
 📁 Project Structure
 bash
 Copy
 Edit
 text-encryption-tool/
-├── aes_module.py        # AES encryption/decryption
-├── des_module.py        # DES encryption/decryption
-├── rsa_module.py        # RSA encryption/decryption
-├── gui.py               # Main GUI logic
+├── aes_module.py        # AES encryption/decryption logic
+├── des_module.py        # DES encryption/decryption logic
+├── rsa_module.py        # RSA encryption/decryption logic
+├── gui.py               # Main GUI script
 ├── main.py              # Optional CLI version
 ├── icon.ico             # Optional app icon
 ├── README.md            # This file
 ├── requirements.txt     # Python dependencies
-└── dist/                # Your .exe will appear here after build
+└── dist/                # Output folder for .exe
+
 ✅ Requirements
 Python 3.13.5 or higher
 
-Libraries:
-
+Required Libraries:
+txt
+Copy
+Edit
 ttkbootstrap
-
 pycryptodome
-
 rsa
 
 📃 License
-MITLicense©2025[Rik]
+MIT License © 2025 [Rik]
 
 🤝 Credits
 Developed by Ankit
 Cyber Security Internship – Pinnacle Labs
-Made with Python, caffeine ☕, and a love for clean code.
+Made with Python, caffeine ☕, and a love for clean code 💻❤️
+
 
 
