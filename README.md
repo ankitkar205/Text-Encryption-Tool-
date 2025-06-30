@@ -51,7 +51,7 @@ This tool includes a sleek GUI built with `ttkbootstrap`, designed to run seamle
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/text-encryption-tool.git
 cd text-encryption-tool
