@@ -111,26 +111,11 @@ pycryptodome
 rsa
 
 📃 License
-MIT License © 2025 [Rik]
+MITLicense©2025[Rik]
 
 🤝 Credits
-Developed by Rik
+Developed by Ankit
 Cyber Security Internship – Pinnacle Labs
 Made with Python, caffeine ☕, and a love for clean code.
 
-🔗 GitHub Profile
 
-yaml
-Copy
-Edit
-
----
-
-## ⚠️ Don’t Forget:
-- Replace `your-username` with your **GitHub username**
-- Add `requirements.txt`:
-
-```txt
-ttkbootstrap
-pycryptodome
-rsa
